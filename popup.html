@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Screenshot Editor</h2>
+    <div class="buttons">
+      <button id="captureBtn" class="btn">Capture Screenshot</button>
+      <button id="saveBtn" class="btn" disabled>Save Screenshot</button>
+    </div>
+    <div id="editor" class="editor-container" style="display: none;">
+      <canvas id="canvas"></canvas>
+      <div class="tools">
+        <input type="color" id="colorPicker" value="#ffeb3b">
+        <input type="range" id="brushSize" min="5" max="50" value="20">
+      </div>
+    </div>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
