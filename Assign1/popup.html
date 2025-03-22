@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Screenshot Editor</title>
+  <title>Screenshot editor Text analyser</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Screenshot Editor</h2>
+    <h2>Screenshot Editor Text</h2>
     <div class="buttons">
       <button id="captureBtn" class="btn">Capture Screenshot</button>
       <button id="saveBtn" class="btn" disabled>Save Screenshot</button>
+      <button id="textAnalysisBtn" class="btn">Text Analysis</button>
     </div>
     <div id="editor" class="editor-container" style="display: none;">
       <canvas id="canvas"></canvas>
@@ -18,7 +19,23 @@
         <input type="range" id="brushSize" min="5" max="50" value="20">
       </div>
     </div>
-    <div id="status" class="status"></div>
+    <div id="textAnalysis" class="text-analysis" style="display: none;">
+      <div class="analysis-header">
+        <h3>Text Analysis</h3>
+        <button id="analyzeBtn" class="btn">Analyze Text</button>
+      </div>
+      <div class="analysis-content">
+        <div class="analysis-section">
+          <label>Text to Analyze:</label>
+          <div id="highlightedText" class="highlighted-text" contenteditable="true"></div>
+        </div>
+        <div class="analysis-section">
+          <label>Meaning:</label>
+          <div id="textMeaning" class="text-meaning"></div>
+        </div>
+      </div>
+    </div>
+    <div id="status" class="status">Select text on the webpage or type text to analyze</div>
   </div>
   <script src="popup.js"></script>
 </body>

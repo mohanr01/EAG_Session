@@ -61,13 +61,14 @@ h2 {
 }
 
 .tool-btn {
-  padding: 5px 10px;
+  padding: 8px 12px;
   background-color: #2196F3;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
 .tool-btn:hover {
@@ -82,5 +83,79 @@ h2 {
 .status {
   text-align: center;
   color: #666;
+  font-size: 14px;
+}
+
+.text-analysis {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.analysis-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.analysis-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.analysis-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.analysis-section label {
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}
+
+.text-input-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.highlighted-text {
+  width: 100%;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 30px;
+  font-size: 14px;
+  outline: none;
+  cursor: text;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlighted-text:focus {
+  border-color: #2196F3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+.text-meaning {
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 40px;
+  font-style: italic;
   font-size: 14px;
 } 

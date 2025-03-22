@@ -2,12 +2,15 @@
   "manifest_version": 3,
   "name": "Screenshot Editor",
   "version": "1.0",
-  "description": "Capture, edit and save screenshots of web pages",
+  "description": "Capture, edit and save screenshots of web pages with text analysis",
   "permissions": [
     "activeTab",
     "scripting",
     "downloads",
     "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
